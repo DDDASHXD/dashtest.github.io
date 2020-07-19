@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg: rgb(13, 13, 24);
+    --main: #ee3737;
+    --main2: rgb(105, 86, 158);
+    --fbbtn: rgb(73, 135, 194);
+    --poppins: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.nav {
+    background: none;
+    padding: 10px;
+    z-index: 1;
+    position: absolute;
+    right: 1px;
+}
+
+.navlink {
+    margin: 0px 10px;
+}
+
+.navlink.active {
+    color: var(--main);
+}
+
+p {
+    font-family: var(--poppins);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--poppins);
+}
+
+a:hover {
+    color: gray;
+}
+
+.btn {
+    background: var(--main);
+    border-radius: 20px;
+    padding: 7px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.03,1.03);
+}
+
+.fb {
+    margin-bottom: 10px;
+    background: var(--fbbtn);
+}
+
+.logreg {
+    display: flex;
+    flex-direction: row;
+}
+
+.login {
+    margin-right: 4px;
+}
+
+.register {
+    margin-left: 4px;
+    background: none;
+    border: 2px var(--main) solid;
+}
+
+.smalltext {
+    font-weight: 200;
+    font-style: italic;
+    color: gray;
+}
+
+.btns {
+    margin-top: 50px;
+    width: 300px;
+}
+
+.formcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: url('https://wallpapercave.com/wp/wp2757874.gif');*/
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://cdnb.artstation.com/p/assets/images/images/024/538/827/original/pixel-jeff-clipa-s.gif?1582740711');
+    /*background: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ab35b856828799.59c6b1a229c6e.gif');*/
+    /*background: url('https://media0.giphy.com/media/vIJaz7nMJhTUc/200.gif');*/
+    background-size: auto;
+}
+
+.contenthead {
+    text-align: center;
+    color: white;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: -20px;
+}
+
+.subtitle {
+    font-size: 35px;
+}
+
+.readmore {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.readmore:hover {
+    bottom: 10px;
+}
+
+.readmore.down {
+    bottom: 10px;
+}
+
+.readmore.slow {
+    transition: all 1s ease;
+}
+
+.readmore.hidden {
+    opacity: 0;
+}
+
+.readmore p {
+    color: white;
+}
+
+.readmore i {
+    color: white;
+    font-size: 25px;
+}
+
+.gobackcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.goback {
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.goback.hidden {
+    opacity: 0;
+}
+
+.goback:hover {
+    margin-top: 10px;
+}
+
+.goback p {
+    color: white;
+}
+
+.goback i {
+    color: white;
+    font-size: 25px;
+}
+
+section {
+    height: 100%;
+}
+
+#page2 {
+    background: #021333;
+}
+
+.sectionwrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionwrapper div {
+    margin: 0 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectiontitle {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.left img {
+    width: 300px;
+    height: 300px;
+}
+
+.right {
+    width: 600px;
+    color: white;   
+}
